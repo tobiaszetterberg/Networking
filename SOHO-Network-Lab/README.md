@@ -17,7 +17,7 @@ I used WPA3 since It's the latest Wi-Fi security protocol and is designed to rep
 ![Router Configuration](Images/Setting%20up%20the%20router.png)
 
 
-##Configuring the Router ACL
+## Configuring the Router ACL
 I configured an ACL (Access Control List) on the router to control network traffic.
 The rule allows devices on my SOHO VLAN to communicate with the internet using any IP protocol.
 I also changed the default policy to "deny any", meaning any routed traffic that doesn't match an allowed rule will be blocked.
