@@ -47,12 +47,13 @@ Both access points belong to the same SOHO VLAN, so devices connected to either 
 ## Installing & configuring hosts
 I added several hosts to represent computers, laptops and printers in two separate office rooms.
 
-![Host Configuration](Images/hostexample.png)
+![Host Configuration](Images/hosts.png)
 
 
 Each host needs to be connected to the right wireless access point specific to that office room. So here for example, I'm connecting "PC-1" to "AP-Office1" using the Wi-Fi password I configured earlier. 
 DHCP assigns IP addresses to each host automatically. I repeated this process for every host but decided not to include every screenshot since the configuration process is essentially the same.
 
+![Host Configuration](Images/hostexample.png)
 
 
 
@@ -60,13 +61,17 @@ DHCP assigns IP addresses to each host automatically. I repeated this process fo
 Once all devices were configured and connected, I ran a traffic simulation to verify that the network was functioning correctly. 
 The test showed that traffic from my SOHO VLAN could successfully reach the internet.
 
+![Traffic Test](Images/test-traffic.png)
+
 
 The logs showed successful communication between hosts and printers, as well as outbound internet access through DNS, HTTP and HTTPS.
 The router also blocked unsolicited inbound traffic to the network using NAT.
 Overall, the tests confirmed that the network was functioning as intended.
 
+![Traffic Logs](Images/logs.png)
 
-## What I Learned
+
+## What I Learned:
 This project helped me put my networking knowledge into practice.
 I gained hands-on experience configuring VLANs, wireless access points, WPA3 security, and router ACL rules.
 I also improved my understanding of NAT, DHCP, and how to troubleshoot and verify network connectivity using traffic simulations and logs.
