@@ -35,17 +35,25 @@ Each AP represents a separate office room and provide wireless connectivity to d
 For AP-1 I enabled Wi-Fi broadcasting, configured the SSID as AP-Office1, selected SOHO VLAN, and enabled WPA3 using the same demonstration password.
 The access point operates as a bridge, allowing wireless devices to connect to the existing office network.
 
+![Access Point Overview](Images/AP1.png)
+
 
 I configured AP-2 using the same settings as AP-1, but with a different SSID (AP-Office2) to represent the second office room.
 Both access points belong to the same SOHO VLAN, so devices connected to either AP are part of the same network.
+
+![Access Point Overview](Images/AP2.png)
 
 
 ## Installing & configuring hosts
 I added several hosts to represent computers, laptops and printers in two separate office rooms.
 
+![Host Configuration](Images/hostexample.png)
+
 
 Each host needs to be connected to the right wireless access point specific to that office room. So here for example, I'm connecting "PC-1" to "AP-Office1" using the Wi-Fi password I configured earlier. 
 DHCP assigns IP addresses to each host automatically. I repeated this process for every host but decided not to include every screenshot since the configuration process is essentially the same.
+
+
 
 
 ## Network Testing & Traffic Analysis
