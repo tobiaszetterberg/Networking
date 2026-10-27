@@ -14,14 +14,14 @@ I configured the SSID, picked the VLAN I just created, WPA3 and chose a password
 I used WPA3 since It's the latest Wi-Fi security protocol and is designed to replace WPA2 with stronger network protection against offline password guessing.
 
 
-Configuring the Router ACL
+##Configuring the Router ACL
 I configured an ACL (Access Control List) on the router to control network traffic.
 The rule allows devices on my SOHO VLAN to communicate with the internet using any IP protocol.
 I also changed the default policy to "deny any", meaning any routed traffic that doesn't match an allowed rule will be blocked.
 This follows the principle of default deny, where only explicitly permitted traffic is allowed through.
 
 
-Setting up and configuring wireless access point's
+## Setting up and configuring wireless access point's
 I first started with connecting the wireless access point's (AP-1 and AP-2) to the router using wired connecting to ensure there is communication between them. 
 Each AP represents a separate office room and provide wireless connectivity to devices in that area.
 
@@ -34,7 +34,7 @@ I configured AP-2 using the same settings as AP-1, but with a different SSID (AP
 Both access points belong to the same SOHO VLAN, so devices connected to either AP are part of the same network.
 
 
-Installing & configuring hosts
+## Installing & configuring hosts
 I added several hosts to represent computers, laptops and printers in two separate office rooms.
 
 
@@ -42,7 +42,7 @@ Each host needs to be connected to the right wireless access point specific to t
 DHCP assigns IP addresses to each host automatically. I repeated this process for every host but decided not to include every screenshot since the configuration process is essentially the same.
 
 
-Network Testing & Traffic Analysis
+## Network Testing & Traffic Analysis
 Once all devices were configured and connected, I ran a traffic simulation to verify that the network was functioning correctly. 
 The test showed that traffic from my SOHO VLAN could successfully reach the internet.
 
@@ -52,7 +52,7 @@ The router also blocked unsolicited inbound traffic to the network using NAT.
 Overall, the tests confirmed that the network was functioning as intended.
 
 
-What I Learned
+## What I Learned
 This project helped me put my networking knowledge into practice.
 I gained hands-on experience configuring VLANs, wireless access points, WPA3 security, and router ACL rules.
 I also improved my understanding of NAT, DHCP, and how to troubleshoot and verify network connectivity using traffic simulations and logs.
